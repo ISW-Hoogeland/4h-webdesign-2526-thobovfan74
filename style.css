@@ -1,14 +1,16 @@
+:root {
+ --kleur1: #4a4b56;
+ --kleur2: #0f0e34; 
+ --kleur3: #1E4000;
+ --kleur4: #08181E; 
+}
+
 body {
-  display:grid;
-  grid-template-areas:
-  "header nav"
-  "main main"
-  "footer footer";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 120px 1fr 60px;
+
 }
 header {
   grid-area: header;
+  background-color: var(--kleur1);
 }
 nav {
   grid-area: nav;
@@ -19,8 +21,5 @@ main {
 footer{
   grid-area: footer;
 }
-kleuren
-4a4b56
-1e4000
-08181e
-0f0e34
+
+
