@@ -6,6 +6,15 @@
 }
 
 body {
+ display: grid;
+grid-template-areas:
+"header"
+"nav"
+"main"
+"footer";
+grid-template-columns: 1fr;
+grid-template-rows: 120px 80px auto 60px ;
+background-color: var(--kleur4);
 
 }
 header {
@@ -13,13 +22,27 @@ header {
   background-color: var(--kleur1);
 }
 nav {
+  background-color: var(--kleur2);
   grid-area: nav;
+  nav ul {
+list-style: none;
+display: flex;
+gap: 15px;
+}
+nav a {
+text-decoration: none;
+}
+nav a:hover {
+text-decoration: underline;
+}
 }
 main {
   grid-area: main;
+  min-height: 80vh;
 }
 footer{
   grid-area: footer;
+  background-color: var(--kleur3);
 }
 
 
