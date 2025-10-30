@@ -1,8 +1,8 @@
 :root {
  --kleur1: #4a4b56;
  --kleur2: #0f0e34; 
- --kleur3: #1E4000;
- --kleur4: #08181E; 
+ --kleur3: #ffffff;
+ --kleur4: #787b7c; 
 }
 
 body {
@@ -14,7 +14,7 @@ grid-template-areas:
 "footer";
 grid-template-columns: 1fr;
 grid-template-rows: 120px 80px auto 60px ;
-background-color: var(--kleur4);
+background-color: var(--kleur3);
 
 }
 header {
@@ -22,7 +22,7 @@ header {
   background-color: var(--kleur1);
 }
 nav {
-  background-color: var(--kleur2);
+  background-color: var(--kleur4);
   grid-area: nav;
   nav ul {
 list-style: none;
@@ -40,6 +40,17 @@ main {
   grid-area: main;
   min-height: 80vh;
 }
+
+main ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main ul li {
+  padding: 20px;
+}
+
 footer{
   grid-area: footer;
   background-color: var(--kleur3);
