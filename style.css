@@ -1,6 +1,6 @@
 :root {
  --kleur1: #4a4b56;
- --kleur2: #0f0e34; 
+ --kleur2: #000000; 
  --kleur3: #ffffff;
  --kleur4: #787b7c; 
 }
@@ -53,7 +53,17 @@ main ul li {
 
 footer{
   grid-area: footer;
-  background-color: var(--kleur3);
+  background-color: var(--kleur2);
 }
 
 
+main {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 20px;
+}
+
+main article {
+  width: 25%;
+}
