@@ -73,3 +73,26 @@ main p {
   margin: auto;
   text-align: center;
 }
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  transition: font-weight 0.2s ease; 
+}
+
+.hover-bold {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  transition: font-weight 0.2s ease;
+}
+
+.hover-bold:hover {
+  font-weight: 700; /* dikker op hover */
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
