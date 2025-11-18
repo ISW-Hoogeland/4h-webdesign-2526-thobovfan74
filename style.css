@@ -57,13 +57,19 @@ footer{
 }
 
 
-main {
+.flex {
   display: flex;
   /* align-items: center; */
   justify-content: center;
   gap: 20px;
 }
 
-main article {
+.flex article {
   width: 25%;
+}
+
+main p {
+  width: 100%;
+  margin: auto;
+  text-align: center;
 }
